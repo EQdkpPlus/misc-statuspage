@@ -426,7 +426,15 @@ class urlfetcher {
 <!DOCTYPE html>
 						<html>
 						<head>
-							<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+							<meta charset="utf-8" />
+							<meta name="viewport" content="width=device-width, initial-scale=1" />
+							<meta name="description" content="Status Overview of EQdkp Plus Webservices" />
+							<meta name="keywords" content="EQdkp Plus, Support, Board, CMS, DKP" />
+							<meta property="og:site_name" content="EQdkp Plus Status Overview" />
+							<meta property="og:url" content="https://status.eqdkp-plus.eu/" />
+							<meta property="og:type" content="website" />
+							<meta property="og:title" content="EQdkp Plus Status Overview" />
+							<meta property="og:description" content="Status Overview of EQdkp Plus Webservices" />
 
 							<title>EQdkp Plus - Status Overview</title>
 							<link rel='stylesheet' href='src/fontawesome/font-awesome.min.css' type='text/css' media='screen' />
@@ -559,59 +567,96 @@ class urlfetcher {
 							}
 							
 							*[class*="grid"] {
-    float: left;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: inline;
-}
+								float: left;
+								margin-left: 10px;
+								margin-right: 10px;
+								display: inline;
+							}
 
-.grid1 {
-    width: 60px;
-}
+							.grid1 {
+								width: 60px;
+							}
 
-.grid7 {
-    width: 250px;
-}
+							.grid7 {
+								width: 250px;
+							}
 
-.grid50 {
-	width: 460px;
-}
+							.grid50 {
+								width: 460px;
+							}
 
-.clear {
-	clear: both;
-}
+							.clear {
+								clear: both;
+							}
 
-.header h1 {
-    padding-left: 40px;
-    padding-top: 30px;
-    font-size: 50px;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #fff;
-    filter: dropshadow(color=#fff, offx=1, offy=1);
-    border: none;
-	line-height: 55px;
-}
+							.header h1 {
+								padding-left: 40px;
+								padding-top: 30px;
+								font-size: 50px;
+								font-weight: bold;
+								text-shadow: 1px 1px 2px #fff;
+								filter: dropshadow(color=#fff, offx=1, offy=1);
+								border: none;
+								line-height: 55px;
+							}
 
-.header img {
-	float: left;
-}
+							.header img {
+								float: left;
+							}
 
-.headerInner{
-	width: 960px;
-	margin: auto;
-}
+							.headerInner{
+								width: 960px;
+								margin: auto;
+							}
 
-i.statusicon {
-	font-size: 50px;
-}
+							i.statusicon {
+								font-size: 50px;
+							}
 
-.green {
-	color: green;
-}
+							.green {
+								color: green;
+							}
 
-.red {
-	color: red;
-}
+							.red {
+								color: red;
+							}
+							
+							@media all and (max-width: 899px) {
+								.grid50 {
+									float: none;
+									margin-left: 0px;
+									margin-right: 0px;
+									display: block;
+									width: 95%;
+								}
+								
+								.headerInner img {
+									width: 150px;
+									float: none;
+									display: none;
+								}
+								
+								.content {
+									width: 95%;
+								}
+								.headerInner{
+									width: 100%;
+								}
+								
+								
+								.headerInner h1 {
+									padding-left: 5px;
+									padding-top: 5px;
+									font-size: 30px;
+									line-height: 35px;
+								}
+								
+								.fb-page, 
+								.fb-page span, 
+								.fb-page span iframe[style] { 
+									width: 100% !important; 
+								}
+							}	
 						</style>
 						
 						<script>
@@ -678,7 +723,7 @@ i.statusicon {
 									
 									<div class="grid50">
 										<h2>News <a href="https://www.facebook.com/EQdkpPlus"><i class="fa fa-lg fa-facebook"></i></a> </h2>
-										<div style="width:800px;">
+										<div>
 											<div class="fb-page" data-href="https://www.facebook.com/EQdkpPlus/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-width="800" data-height="650"><blockquote cite="https://www.facebook.com/EQdkpPlus/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/EQdkpPlus/">EQdkp-Plus</a></blockquote></div>
 										</div>
 									</div>
