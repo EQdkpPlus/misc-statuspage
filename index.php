@@ -230,7 +230,7 @@ class status {
 	}
 	
 	//Check mirror2 (webgo)
-	function check_mirror2(){
+	function check_mirror2(){	
 		$strFetchResult = $this->objUrlfetcher->fetch("http://mirror2.eqdkp-plus.eu/");
 		if($strFetchResult){
 			if(preg_match('#'.preg_quote('Mirror last update').'#', $strFetchResult)){
@@ -435,6 +435,7 @@ class urlfetcher {
 							<meta property="og:type" content="website" />
 							<meta property="og:title" content="EQdkp Plus Status Overview" />
 							<meta property="og:description" content="Status Overview of EQdkp Plus Webservices" />
+							<meta http-equiv="refresh" content="300" />
 
 							<title>EQdkp Plus - Status Overview</title>
 							<link rel='stylesheet' href='src/fontawesome/font-awesome.min.css' type='text/css' media='screen' />
@@ -628,6 +629,10 @@ class urlfetcher {
 									margin-right: 0px;
 									display: block;
 									width: 95%;
+								}
+								
+								.grid7 {
+									width: auto;
 								}
 								
 								.headerInner img {
