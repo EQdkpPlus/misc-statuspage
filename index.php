@@ -155,7 +155,7 @@ class status {
 	
 	//Check Repo API (fetches Extensionlist)
 	function check_liveupdate(){
-		$strFetchResult = $this->objUrlfetcher->fetch("https://eqdkp-plus.eu/repository/repository.php?function=extension_list");
+		$strFetchResult = $this->objUrlfetcher->fetch("https://eqdkp-plus.eu/repository/repository.php?function=extension_list&ref=statuscheck");
 		if($strFetchResult){
 			$arrJson = json_decode($strFetchResult, true);
 			if($arrJson && isset($arrJson['extensions']) && isset($arrJson['extensions']['extension_pk'])){
